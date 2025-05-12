@@ -1,0 +1,105 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #93ad93;
+}
+
+body, div, input, label, option, select, span, button {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a3e22;
+}
+
+div {
+  color: #102f17;
+  text-shadow: 1px 1px 1px #a0baa0;
+}
+
+button, input, select {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #c3c5cf56;
+  text-shadow: 1px 1px 0 #a0baa0;
+}
+
+input, select {
+  margin: 8px;
+  padding: 4px;
+  box-shadow:  inset 2px 2px 5px #7e877f, inset -5px -5px 10px #92a192;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+
+  &:focus {
+    box-shadow:  inset 1px 1px 2px #6f7074, inset -1px -1px 2px #a0baa0;
+  }
+}
+
+button {
+  color:#446344;
+  box-shadow: -5px -5px 10px #7e877f,  5px 5px 10px #8a978a;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #c3c5cfa0;
+    box-shadow: -2px -2px 5px #839483, 2px 2px 5px #919297;
+  }
+
+  &:active {
+    box-shadow: inset 1px 1px 2px #839483, inset -1px -1px 2px #919297;
+  }
+}
+
+.flex-box {
+  width: 50%;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.items {
+  padding: 5px;
+}
+
+.city-wrapper {
+  width: 100%;
+  background-color: #c3c5cf56;
+  margin: 5px;
+  border-radius:15px;
+
+  &:hover {
+      background-color: #c3c5cfa0;
+    }
+}
+
+.city-name {
+  width: 100%;
+  padding: 5px;
+}
+
+.city-btn {
+  margin: 5px;
+  padding: 5px;
+}
